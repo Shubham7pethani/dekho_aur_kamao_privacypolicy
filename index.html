@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal & Compliance - Dekho Aur Kamao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E60FF;
+      --primary-dark: #0D48D9;
+      --navy: #0A1C44;
+      --text-muted: #5A6D96;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--navy);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(10, 28, 68, 0.06);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .header-banner {
+      background: linear-gradient(135deg, #1E60FF 0%, #0A1C44 100%);
+      color: #FFFFFF;
+      padding: 48px;
+      text-align: center;
+    }
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      font-size: 36px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 15px;
+      color: #D1E0FF;
+    }
+    .tab-bar {
+      display: flex;
+      background: #F1F5F9;
+      border-bottom: 1px solid var(--border);
+      padding: 6px 12px 0;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 14px 20px;
+      border: none;
+      background: none;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 12px 12px 0 0;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: #FFFFFF;
+      color: var(--primary);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.04);
+    }
+    .tab-content {
+      padding: 40px 48px;
+    }
+    .tab-pane {
+      display: none;
+    }
+    .tab-pane.active {
+      display: block;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 28px 0 10px 0;
+      letter-spacing: -0.01em;
+    }
+    p {
+      color: #334155;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    ul {
+      margin: 10px 0 18px 24px;
+      color: #334155;
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-box {
+      background: #F8FAFC;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #1E293B;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-banner">
+      <div class="app-icon">💰</div>
+      <h1>Dekho Aur Kamao</h1>
+      <p class="subtitle">Official Legal &amp; Compliance Center &bull; SholoTech</p>
+    </div>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchTab('privacy')">Privacy Policy</button>
+      <button class="tab-btn" onclick="switchTab('terms')">Terms &amp; Conditions</button>
+    </div>
+
+    <div class="tab-content">
+      <!-- PRIVACY POLICY PANE -->
+      <div id="pane-privacy" class="tab-pane active">
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>Dekho Aur Kamao</strong> ("the App"), operated by <strong>SholoTech</strong>. This Privacy Policy discloses our privacy practices in accordance with Google Play Developer Policies and Indian Information Technology laws.</p>
+
+        <h2>2. Data We Collect</h2>
+        <ul>
+          <li><strong>Google Account Data:</strong> Name, verified email address, and unique user ID via Google Sign-In.</li>
+          <li><strong>UPI Payment Address:</strong> Provided voluntarily by the user solely to execute UPI withdrawals.</li>
+          <li><strong>Coin Ledger History:</strong> Rewarded ad completion events, coin credits, coin locks, and transfer logs.</li>
+          <li><strong>Device &amp; Ad Telemetry:</strong> Google Advertising ID, device model, and OS version collected via Unity Ads SDK.</li>
+        </ul>
+
+        <h2>3. Third-Party Partners</h2>
+        <p>We work with trusted industry leaders to provide services:</p>
+        <ul>
+          <li><strong>Unity Ads:</strong> Serves rewarded video ads and verifies ad completions.</li>
+          <li><strong>Google Play Services:</strong> Core OAuth 2.0 authentication.</li>
+          <li><strong>InsForge Platform:</strong> Enterprise encrypted cloud backend and PostgreSQL database.</li>
+        </ul>
+
+        <h2>4. Account &amp; Data Deletion</h2>
+        <p>You can permanently delete your account and associated data anytime by emailing <a href="mailto:official.sholotech@gmail.com" style="color:var(--primary);font-weight:600;">official.sholotech@gmail.com</a>. All personal records are purged within 30 days.</p>
+
+        <div class="highlight-box">
+          <strong>Contact Information:</strong><br>
+          SholoTech (Company: SholoTech)<br>
+          Email: <a href="mailto:official.sholotech@gmail.com" style="color:var(--primary);font-weight:600;">official.sholotech@gmail.com</a><br>
+          Gujarat, India
+        </div>
+      </div>
+
+      <!-- TERMS & CONDITIONS PANE -->
+      <div id="pane-terms" class="tab-pane">
+        <h2>1. User Agreement</h2>
+        <p>By using <strong>Dekho Aur Kamao</strong>, you agree to these Terms. You must be at least 18 years old and a resident of India with an active UPI ID to redeem rewards.</p>
+
+        <h2>2. Reward System &amp; Conversion</h2>
+        <ul>
+          <li><strong>Standard Rate:</strong> 1,000 coins = ₹10.00 INR (1 coin = ₹0.01 INR).</li>
+          <li><strong>Eligibility:</strong> Coins are awarded strictly upon <em>full completion</em> of rewarded video ads.</li>
+          <li><strong>Minimum Withdrawal:</strong> 3,000 coins (₹30.00 INR).</li>
+          <li><strong>Nature of Coins:</strong> In-app loyalty reward points with no outside cash value until redeemed.</li>
+        </ul>
+
+        <h2>3. Fair Play &amp; Anti-Fraud</h2>
+        <p>Automated scripts, emulators, auto-clickers, multi-account abuse, and VPN proxies are strictly banned. Violations result in immediate account termination and coin forfeiture.</p>
+
+        <h2>4. Non-Gambling Disclaimer</h2>
+        <p>Dekho Aur Kamao does not require deposits, bets, or entry fees. It is strictly a rewarded advertising application, not a lottery or gambling service.</p>
+
+        <div class="highlight-box">
+          <strong>Grievance Officer:</strong><br>
+          Shubham Pethani &bull; SholoTech<br>
+          Email: <a href="mailto:official.sholotech@gmail.com" style="color:var(--primary);font-weight:600;">official.sholotech@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 SholoTech &bull; Dekho Aur Kamao &bull; All Rights Reserved
+  </footer>
+
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+      if (tab === 'privacy') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('pane-privacy').classList.add('active');
+      } else {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('pane-terms').classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
+
